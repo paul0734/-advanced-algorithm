@@ -3,7 +3,7 @@ num = input()
 result=int(num[0]) #첫번째 인자 삽입
 
 for i in range(1, len(num)):
-    a=int(num[i]) #두번쨰 인자 삽입
+    a=int(num[i]) #i 번째 인자 삽입
     if result<=1 or a <=1: #첫번째 인자가 0또는 1이거나, 그 뒤에나오는 인자들이 0또는 1이면 
         result+=a
     else:
