@@ -20,7 +20,7 @@ void StackInit(Stack *sp){
 }
 
 
-//큐가 비어있는지 확인하는 함수
+//스택이 비어있는지 확인하는 함수
 int IsEmpty(Stack *sp){
     if(sp->top == -1)                   //스택의 top이 -1이라면 스택이 비어있는 것이므로 TRUE리턴
         return TRUE;
@@ -41,7 +41,7 @@ void push(Stack *sp, Data data){
 Data pop(Stack *sp){
     if(IsEmpty(sp))                     //스택이 비어있다면 가져올게 없음
         return ' ';
-        return sp->arr[(sp->top)--];    //스택에서 제일 위에있는 값을 가져오고 top을 감소  (반드시 값을 가져온 뒤 top을 감소시켜야 함)
+    return sp->arr[(sp->top)--];        //스택에서 제일 위에있는 값을 가져오고 top을 감소  (반드시 값을 가져온 뒤 top을 감소시켜야 함)
 }
 
 
